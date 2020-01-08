@@ -1,0 +1,2 @@
+# afssequelize
+Sequelize Utilities
