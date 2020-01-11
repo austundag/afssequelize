@@ -1,0 +1,26 @@
+{
+  "name": "afssequelize",
+  "version": "0.0.1",
+  "description": "sequelize utilities",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony index.js",
+    "test": "cross-env NODE_ENV=test ./node_modules/mocha/bin/_mocha -t 10000 --exit --bail test/*.js",
+    "beautify": "esw *.js . --color --fix",
+    "coverage": "NODE_ENV=test istanbul cover --report cobertura ./node_modules/mocha/bin/_mocha -- -R spec --recursive -t 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austundag/afssequelize.git"
+  },
+  "author": "Afsin Ustundag",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/austundag/afssequelize/issues"
+  },
+  "homepage": "https://github.com/austundag/afssequelize#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "sequelize": "^5.21.3"
+  }
+}
